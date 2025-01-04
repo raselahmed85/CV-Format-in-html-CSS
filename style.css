@@ -1,0 +1,338 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(234, 234, 234);
+}
+
+.container{
+    width: 85%;
+    margin: 0 auto;
+    background-color: white;
+    display: flex;
+}
+
+
+.left-div{
+    width: 30%;
+    background-color:#2C3A47;
+    color: white;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.profile-div{
+    width: 250px;
+    height: 300px;
+    background-color: red;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.images-div img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+
+#saide-body{
+}
+
+.about h2{
+    font-size: 40px;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+.web{
+    font-size: 25px;
+    font-family: "Gruppo";
+    text-align: center;
+    line-height: 0;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+}
+.about-pera{
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-align:justify;
+    padding: 10px 15px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+}
+.contact{
+    margin-bottom: 30px;
+}
+.contact p{
+    padding: 10px;
+    font-size: 20px;
+}
+.contact i{
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: white;
+    color: black;
+    margin-left: 20px;
+}
+
+.language-div{
+    width: 50%;
+    margin: 0 auto;
+    background-color: white;
+    margin-bottom: 30px;    
+    border-radius: 15px;
+}
+
+.language-div h2{
+    color: black;
+    text-align: center;
+    padding: 10px;
+    font-size: 25px;
+}
+.lan-sec ul li{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 70px;
+}
+
+.expertise h2{
+    background-color: white;
+    font-size: 30px;
+    color: black;
+    display: inline-block;
+    padding: 5px 70px;
+    margin-left: 100px;
+    border-radius: 20px;
+}
+
+.expertise ul li{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 70px;
+}
+
+
+
+.right-div{
+    width: 70%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+.rigth-container{
+    margin-left: 30px;
+}
+
+.name-div h1{
+    font-size: 80px;
+    font-family: "bebas neue";
+    font-weight: normal;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.web-pera{
+    text-align: center;
+    font-family: "Gruppo";
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 2px;
+    margin-bottom: 30px;
+}
+.header-04{
+    font-size: 30px;
+}
+.product-pera{
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.experienc-pera{
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.header{
+    background-color:#1C3A41;
+    text-align: center;
+    display:inline-block;
+    padding: 8px 150px;
+    border-radius: 10px;
+    color: white;
+    margin-left:250px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+
+
+.skill-div{
+    margin-bottom: 100px;
+    gap: 20px;
+}
+.Technical-Skills{
+    width: 50%;
+}
+.Technical-Skills h1{
+    background-color:#1C3A41;
+    text-align: center;
+    display:inline-block;
+    padding: 8px 20px;
+    border-radius: 10px;
+    color: white;
+    margin-left:250px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    display: none;
+}
+.Technical-Skills ul li{
+    color: black;
+    position: relative;
+    margin: 40px;
+    list-style: none;
+    text-transform: uppercase;
+}
+.Technical-Skills ul li::before{
+    width:100%;
+    height: 20px;
+    background-color: black;
+    border-radius: 40px;
+    content: '';
+    position: absolute;
+    top:calc(100% + 5px);
+    left: 0;
+
+}
+.Technical-Skills ul li::after{
+    width:0;
+    height: 20px;
+    background-color:tomato;
+    border-radius: 20px;
+    content: '';
+    position: absolute;
+    top:calc(100% + 5px);
+    left: 0;
+
+
+    animation-duration: 5s;
+    animation-iteration-count:5;
+    animation-timing-function: ease-in;
+    animation-direction: forword;
+    animation-fill-mode: forwards;
+}
+
+.Technical-Skills .html::after{
+    animation-name: html;
+}
+@keyframes html{
+    to{
+        width:95%;
+        background-color: #e58e26;
+    }
+
+}
+.Technical-Skills .css::after{
+    animation-name: css;
+}
+@keyframes css{
+    to{
+        width:85%;
+        background-color: #e58e26;
+    }
+
+}
+.Technical-Skills .JavaScript::after{
+    animation-name: javaScript;
+}
+@keyframes javaScript{
+    to{
+        width:75%;
+        background-color: #e58e26;
+    }
+
+}
+.Technical-Skills .PHP::after{
+    animation-name: php;
+}
+@keyframes php{
+    to{
+        width:80%;
+        background-color: #e58e26;
+    }
+
+}
+.Technical-Skills .Python::after{
+    animation-name: python;
+}
+@keyframes python{
+    to{
+        width:70%;
+        background-color: #e58e26;
+    }
+
+}
+.Technical-Skills .bootstrap5::after{
+    animation-name: bootstrap5;
+}
+@keyframes bootstrap5{
+    to{
+        width:85%;
+        background-color: #e58e26;
+    }
+
+}
+.Technical-Skills .Node-js::after{
+    animation-name: nodejs;
+}
+@keyframes nodejs{
+    to{
+        width: 85%;
+        background-color: #e58e26;
+        
+    }
+}
+
+.professional-skill{
+    width: 50%;
+}
+
+.professional-skill h1{
+    text-align: center;
+    font-size: 50px;
+    color: rgb(48, 48, 48);
+}
+
+
+/* Skill div End */
+
+
+
+/* .Technical-Skills .html::after{
+    content:"95%";
+}
+.Technical-Skills .css::after{
+    content:"95%";
+}
+.Technical-Skills .JavaScript::after{
+    content:"95%";
+}
+.Technical-Skills .PHP::after{
+    content:"95%";
+}
+.Technical-Skills .Python::after{
+    content:"95%";
+}
+.Technical-Skills .bootstrap5::after{
+    content:"95%";
+} */
+
+
