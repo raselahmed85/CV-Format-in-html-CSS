@@ -6,6 +6,11 @@
 body{
     background-color: rgb(234, 234, 234);
 }
+.overlep{
+    width: 80%;
+    margin:50px auto;
+     
+}
 
 .container{
     width: 85%;
@@ -156,10 +161,12 @@ body{
 .product-pera{
     font-size: 20px;
     margin-bottom: 30px;
+    padding-right: 30px;
 }
 .experienc-pera{
     font-size: 20px;
     margin-bottom: 30px;
+    padding-right: 30px;
 }
 .header{
     background-color:#1C3A41;
